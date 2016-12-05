@@ -313,3 +313,6 @@ body {
   right:0px;
 
 }
+
+.thumbnail img { min-height:75px; height:150px;
+min-width: 75px width:100px;}
