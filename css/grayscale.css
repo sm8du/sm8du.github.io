@@ -323,3 +323,15 @@ body {
   border-width: 3px black;
   
 }
+.img-thumbnail {
+  width: 300px;
+  height: 300px;
+}
+
+.img-rounded {
+  width: 300px;
+  height: 300px;
+  border-style: line black;
+  right:0px;
+
+}

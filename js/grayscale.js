@@ -33,3 +33,7 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 }
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
