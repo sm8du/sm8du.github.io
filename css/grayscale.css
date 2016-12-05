@@ -57,10 +57,10 @@ a:focus {
   border-bottom: 2px solid rgba(25, 25, 55, 0.4);
   text-transform: uppercase;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: white;
+  background-color: black;
 }
 .navbar-custom .navbar-toggle {
-  color: #0F1328;
+  color: white;
   /*background-color: rgba(255, 255, 255, 0.2);*/
   font-size: 12px;
 }
@@ -75,7 +75,7 @@ a:focus {
   outline: none;
 }
 .navbar-custom a {
-  color: black;
+  color: white;
 }
 .navbar-custom .nav li a {
   -webkit-transition: background 0.3s ease-in-out;
@@ -114,7 +114,7 @@ a:focus {
   }
   .navbar-custom.top-nav-collapse {
     padding: 0;
-    background: white;
+    background: black;
     border-bottom: 2px solid rgba(25, 25, 55, 0.4);
 
   }
@@ -133,7 +133,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: white;
-  background: url("https://static.pexels.com/photos/7109/laptop-notebook-clean-hero.jpg") no-repeat bottom center scroll;
+  background: url("https://static.pexels.com/photos/29642/pexels-photo-29642.jpg") no-repeat bottom center scroll;
   background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
