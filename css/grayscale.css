@@ -144,10 +144,8 @@ a:focus {
 }
 .intro .intro-body .brand-heading {
 
-
   font-size: 40px;
   color:ghostwhite;
-
 
 }
 .intro .intro-body .intro-text {
@@ -158,9 +156,11 @@ a:focus {
   .intro {
     height: 100%;
     padding: 0;
+
   }
   .intro .intro-body .brand-heading {
     font-size: 100px;
+
   }
   .intro .intro-body .intro-text {
     font-size: 26px;
