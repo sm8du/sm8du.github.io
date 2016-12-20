@@ -333,8 +333,23 @@ body {
 }
 
 
+.grid-item {
+  float: left;
+  width: 80px;
+  height: 60px;
+  border: 2px solid hsla(0, 0%, 0%, 0.5);
+}
+
+.grid-item { width: 200px;
+background: blue;}
+.grid-item--width2 { width: 400px; background: purple;}
 
 
+.grid-medium {
+  width:  150px;
+  height: 50px;
+  background: #A6E392;
+}
 
 
 

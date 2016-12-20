@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -23,9 +23,15 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
+
     <link href="css/grayscale.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="bower_components/fakeLoader/fakeLoader.css">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+
+    <script src="js/modernizr.custom.js"></script>
+
+
 
 
 
@@ -35,178 +41,255 @@
 
 <div id="fakeLoader"> </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+<!-- Navigation -->
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <span class="glyphicon glyphicon-home" aria-hidden="true"></span> <span class="light">Home</span>
+            </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+            <ul class="nav navbar-nav">
+                <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#section_1">About</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#section_2">Tableau</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+
+<!-- Intro Header -->
+<header class="intro">
+    <div class="intro-body">
         <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">
-                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span> <span class="light">Home</span>
-                </a>
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <h1 class="brand-heading animated fadeInDown">Welcome</h1>
+                    <p class="intro-text animated fadeInDown">Lorems ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#bl-main" class="btn btn-circle page-scroll">
+                        <i class="fa fa-angle-double-down animated"></i>
+                    </a>
+                </div>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#section_1">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#section_2">Tableau</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container -->
-    </nav>
+    </div>
+</header>
 
-    <!-- Intro Header -->
-    <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading animated fadeInDown">Welcomde</h1>
-                        <p class="intro-text animated fadeInDown">Lorems ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <a href="#section_1" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+<div id="bl-main" class="bl-main">
+    <section>
+        <div class="bl-box">
+            <h2 class="glyphicon glyphicon-home"></br>About</h2>
+        </div>
+        <div class="bl-content">
+            <h2>About </h2>
+            <p>T</p>
+
+        </div>
+        <span class=" glyphicon glyphicon-remove-circle bl-icon-close"></span>
+    </section>
+    <section id="bl-work-section">
+        <div class="bl-box">
+            <h2 class="glyphicon glyphicon-sunglasses"></br>Works</h2>
+        </div>
+        <div class="bl-content">
+            <h2>My Works</h2>
+            <p>Mung bean maize dandelion sea lettuce catsear bunya nuts ricebean tatsoi caulie horseradish pea.</p>
+            <ul id="bl-work-items">
+                <li data-panel="panel-1"><a href="#"><img src="images/1.jpg" /></a></li>
+                <li data-panel="panel-2"><a href="#"><img src="images/2.jpg" /></a></li>
+                <li data-panel="panel-3"><a href="#"><img src="images/3.jpg" /></a></li>
+                <li data-panel="panel-4"><a href="#"><img src="images/4.jpg" /></a></li>
+            </ul>
+            <p>Illustrations by <a href="http://dribbble.com/isaac317/click">Isaac Montemayor</a></p>
+        </div>
+        <span class="glyphicon glyphicon-grain bl-icon-close"></span>
+    </section>
+    <section>
+        <div class="bl-box">
+            <h2 class="bl-icon bl-icon-blog">Blog</h2>
+        </div>
+        <div class="bl-content">
+            <h2>My Musings</h2>
+            <article>
+                <h3>Being a Freelance Designer</h3>
+                <p>Stumptown helvetica cardigan, odd future seitan tattooed flannel. Kale chips direct trade cray beard. 8-bit etsy butcher post-ironic blog lo-fi mcsweeney's, sustainable pickled umami flexitarian DIY ethical plaid trust fund. Wolf cred organic, terry richardson aesthetic four loko occupy vegan chillwave readymade deep... <a href="#">Read more</a></p>
+            </article>
+            <article>
+                <h3>Working with Photoshop</h3>
+                <p>Cosby sweater odd future gluten-free actually dreamcatcher. Fixie cray vice sriracha disrupt, lo-fi pitchfork mcsweeney's swag YOLO meh chambray etsy. Keytar sriracha fanny pack church-key hashtag vice blog. 3 wolf moon VHS helvetica, raw denim deep v shoreditch seitan twee... <a href="#">Read more</a></p>
+            </article>
+            <article>
+                <h3>Making use of Icon Fonts</h3>
+                <p>Locavore irony gastropub chillwave, butcher meggings flexitarian pinterest master cleanse godard. Intelligentsia pop-up neutra, williamsburg gastropub godard pinterest swag deep v umami lomo. Butcher next level 90's wolf bushwick, narwhal photo booth YOLO kale chips whatever small batch. Meh viral ethical hella cardigan portland, street art mlkshk meggings mixtape kale chips cliche messenger bag pitchfork... <a href="#">Read more</a></p>
+            </article>
+            <article>
+                <h3>Being a Freelance Designer</h3>
+                <p>Stumptown helvetica cardigan, odd future seitan tattooed flannel. Kale chips direct trade cray beard. 8-bit etsy butcher post-ironic blog lo-fi mcsweeney's, sustainable pickled umami flexitarian DIY ethical plaid trust fund. Wolf cred organic, terry richardson aesthetic four loko occupy vegan chillwave readymade deep... <a href="#">Read more</a></p>
+            </article>
+            <article>
+                <h3>Working with Photoshop</h3>
+                <p>Cosby sweater odd future gluten-free actually dreamcatcher. Fixie cray vice sriracha disrupt, lo-fi pitchfork mcsweeney's swag YOLO meh chambray etsy. Keytar sriracha fanny pack church-key hashtag vice blog. 3 wolf moon VHS helvetica, raw denim deep v shoreditch seitan twee... <a href="#">Read more</a></p>
+            </article>
+            <article>
+                <h3>Making use of Icon Fonts</h3>
+                <p>Locavore irony gastropub chillwave, butcher meggings flexitarian pinterest master cleanse godard. Intelligentsia pop-up neutra, williamsburg gastropub godard pinterest swag deep v umami lomo. Butcher next level 90's wolf bushwick, narwhal photo booth YOLO kale chips whatever small batch. Meh viral ethical hella cardigan portland, street art mlkshk meggings mixtape kale chips cliche messenger bag pitchfork... <a href="#">Read more</a></p>
+            </article>
+        </div>
+        <span class="bl-icon bl-icon-close"></span>
+    </section>
+    <section>
+        <div class="bl-box">
+            <h2 class="bl-icon bl-icon-contact">Contact</h2>
+        </div>
+        <div class="bl-content">
+            <h2>Get in touch</h2>
+            <p>Pinterest semiotics single-origin coffee craft beer thundercats irony, tumblr bushwick intelligentsia pickled. Narwhal mustache godard master cleanse street art, occupy ugh selfies put a bird on it cray salvia four loko gluten-free shoreditch. Occupy american apparel freegan cliche. Mustache trust fund 8-bit jean shorts mumblecore thundercats. Pour-over small batch forage cray, banjo post-ironic flannel keffiyeh cred ethnic semiotics next level tousled fashion axe. Sustainable cardigan keytar fap bushwick bespoke.</p>
+        </div>
+        <span class="bl-icon bl-icon-close"></span>
+    </section>
+    <!-- Panel items for the works -->
+    <div class="bl-panel-items" id="bl-panel-work-items">
+        <div data-panel="panel-1">
+            <div>
+                <img src="images/1.jpg" />
+                <h3>Fixie bespoke</h3>
+                <p>Iphone artisan direct trade ethical Austin. Fixie bespoke banh mi ugh, deep v vinyl hashtag. Tumblr gentrify keffiyeh pop-up iphone twee biodiesel. Occupy american apparel freegan cliche. Mustache trust fund 8-bit jean shorts mumblecore thundercats. Pour-over small batch forage cray, banjo post-ironic flannel keffiyeh cred ethnic semiotics next level tousled fashion axe. Sustainable cardigan keytar fap bushwick bespoke.</p>
+            </div>
+        </div>
+        <div data-panel="panel-2">
+            <div>
+                <img src="images/2.jpg" />
+                <h3>Chillwave mustache</h3>
+                <p>Squid vinyl scenester literally pug, hashtag tofu try-hard typewriter polaroid craft beer mlkshk cardigan photo booth PBR. Chillwave 90's gentrify american apparel carles disrupt. Pinterest semiotics single-origin coffee craft beer thundercats irony, tumblr bushwick intelligentsia pickled. Narwhal mustache godard master cleanse street art, occupy ugh selfies put a bird on it cray salvia four loko gluten-free shoreditch.</p>
+            </div>
+        </div>
+        <div data-panel="panel-3">
+            <div>
+                <img src="images/3.jpg" />
+                <h3>Austin hella</h3>
+                <p>Ethical cray wayfarers leggings vice, seitan banksy small batch ethnic master cleanse. Pug chillwave etsy, scenester meh occupy blue bottle tousled blog tonx pinterest selvage mixtape swag cosby sweater. Synth tousled direct trade, hella Austin craft beer ugh chambray.</p>
+            </div>
+        </div>
+        <div data-panel="panel-4">
+            <div>
+                <img src="images/4.jpg" />
+                <h3>Brooklyn dreamcatcher</h3>
+                <p>Fashion axe 90's pug fap. Blog wayfarers brooklyn dreamcatcher, bicycle rights retro YOLO. Wes anderson lomo 90's food truck 3 wolf moon, twee jean shorts. Iphone small batch twee wolf yr before they sold out. Brooklyn echo park cred, portland pug selvage flannel seitan tousled mcsweeney's.</p>
+            </div>
+        </div>
+        <nav>
+            <span class="bl-next-work">&gt; Next Project</span>
+            <span class="bl-icon bl-icon-close"></span>
+        </nav>
+    </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer>
+    <div class="container text-center">
+        <p>Copyright &copy; Moscalu</p>
+
+    </div>
+</footer>
+
+
+<!-- Modal -->
+<div class="modal fade " id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Uil</h4>
+            </div>
+            <div class="modal-body">
+
+                <iframe src="http://public.tableausoftware.com/views/MigrationFlows-MakeoverMonday1252016/Dashboard1?:embed=y&amp;:from_wg=true"
+                        style="zoom:0.6" width="99.6%" height="900" frameborder="0" >
+                </iframe>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade " id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" >Worst Drivers</h4>
+            </div>
+            <div class="modal-body">
+                <containter>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="modal-h1"> Sup</h1>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </header>
 
-    <!-- Section 1-->
-    <section id="section_1" class="container content-section text-center">
-        <div class="row ">
-            <div class="col-lg-12">
-                <h1 class="slide-in-demo"> About this stuff</h1>
+                </containter>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum enim justo, mattis vitae accumsan in,
-                    scelerisque eget justo. Phasellus ligula enim, pharetra sit amet pharetra in, hendrerit ut risus. Cras dignissim
-                    fringilla tellus ut posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-                    imperdiet malesuada pretium. Vestibulum quis turpis aliquam, posuere nisi ut, rhoncus nulla.
-                    Phasellus velit dui, varius vitae erat in, ultrices dignissim felis. Quisque at leo ornare, consequat nunc ut,
-                    hendrerit eros. Curabitur rhoncus vitae quam sed tempor. Donec sed augue interdum enim dapibus semper. Vivamus
-                    eleifend justo libero, eget volutpat eros dignissim vehicula. Proin aliquam ornare augue, sed dapibus tortor.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="section_2" class="container content-section text-center">
-        <div class="row ">
-            <h1>Example Projects</h1>
-            <div class="col-xs-6 col-md-6">
-                <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal2">
-                    <img src="img/tab/Drivers.png" alt="...">
-                </a>
-            </div>
-            <div class="col-xs-6 col-md-6">
-                <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModal1">
-                    <img src="img/tab/Immigration.png" alt="...">
-                </a>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!--  Section 3 -->
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h1>Contact me</h1>
-                <p>Feel free to email me with questions.</p>
-                <p><a href="mailto:sum57@psu.edu">tmoscalu@gmail.com</a>
-                </p>
+                <iframe src="http://public.tableausoftware.com/views/StatesWiththeWorstDriversbyState/StatesWithTheWorstDrivers?:embed=y&amp;:from_wg=true"
+                        style="zoom:0.6" width="99.6%" height="900" frameborder="0" >
+                </iframe>
 
             </div>
-        </div>
-
-    </section>
-
-
-
-    <!-- Footer -->
-    <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Moscalu</p>
-        </div>
-    </footer>
-
-
-    <!-- Modal -->
-    <div class="modal fade " id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Uil</h4>
-                </div>
-                <div class="modal-body">
-
-                    <iframe src="http://public.tableausoftware.com/views/MigrationFlows-MakeoverMonday1252016/Dashboard1?:embed=y&amp;:from_wg=true"
-                            style="zoom:0.6" width="99.6%" height="900" frameborder="0" >
-                    </iframe>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-                </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
-
-    <!-- Button trigger modal -->
-
-    <!-- Modal -->
-    <div class="modal fade " id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" >Uil</h4>
-                </div>
-                <div class="modal-body">
-
-                    <iframe src="http://public.tableausoftware.com/views/StatesWiththeWorstDriversbyState/StatesWithTheWorstDrivers?:embed=y&amp;:from_wg=true"
-                            style="zoom:0.6" width="99.6%" height="900" frameborder="0" >
-                    </iframe>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="vendor/jquery/jquery.js"></script>
+</div>
 
 
-    <!--Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="vendor/jquery/jquery.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <!-- Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
-    <script src="bower_components/fakeLoader/fakeLoader.js"></script>
+<!--Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Theme JavaScript -->
+<script src="js/grayscale.js"></script>
+<script src="bower_components/fakeLoader/fakeLoader.js"></script>
+
+<script src="js/boxlayout.js"></script>
+<script>
+    $(function() {
+        Boxlayout.init();
+    });
+</script>
 
 
 <script type="text/javascript">
@@ -220,7 +303,10 @@
 
     });
 
+
 </script>
+
+
 
 </body>
 
