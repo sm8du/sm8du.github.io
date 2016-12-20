@@ -56,31 +56,37 @@ a:hover {
 	position: absolute;
 	width: 50%;
 	height: 50%;
+
 }
 
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: #F06060;
+
+	background: url(../img/f.jpg) repeat;
+
+
 }
 
 .bl-main > section:nth-child(2) {
 	top: 0;
 	left: 50%;
-	background: #FA987D;
-	background-img: url('/images/1.jpg');
+	background: url(../img/f.jpg) repeat;
+
 }
 
 .bl-main > section:nth-child(3) {
 	top: 50%;
 	left: 0;
-	background: #72CCA7;
+
+	background: url(../img/f.jpg) repeat;
+
 }
 
 .bl-main > section:nth-child(4) {
 	top: 50%;
 	left: 50%;
-	background: #10A296;
+	background: url(../img/f.jpg) repeat;
 }
 
 .bl-box {
@@ -166,6 +172,13 @@ a:hover {
 	z-index: 100;
 	opacity: 0;
 	pointer-events: none;
+	font-weight: 700;
+	letter-spacing: 2px;
+	display: block;
+	text-transform: uppercase;
+	line-height: 2em;
+	cursor: pointer;
+	margin-right: 2em;
 }
 
 .bl-icon-close:before {
@@ -313,7 +326,7 @@ div.bl-panel-items.bl-panel-items-show nav span {
 	margin: 5px;
 }
 
-div.bl-panel-items nav span.bl-next-work {
+div.bl-panel-items nav span.bl-next-work  {
 	font-weight: 700;
 	letter-spacing: 2px;
 	display: block;
@@ -322,6 +335,8 @@ div.bl-panel-items nav span.bl-next-work {
 	cursor: pointer;
 	margin-right: 2em;
 }
+
+
 
 div.bl-panel-items.bl-panel-items-show nav {
 	opacity: 1;
@@ -373,16 +388,17 @@ div.bl-panel-items > div.bl-hide-current-work {
 }
 
 .bl-main > section:first-child.bl-expand {
-	background: #EE4444;
+
+	background: url(../img/ai.png) repeat;
 }
 .bl-main > section:nth-child(2).bl-expand {
-	background: #F98262;
+	background: url(../img/4.png) repeat;
 }
 .bl-main > section:nth-child(3).bl-expand {
-	background: #4BBE8E;
+	background: url(../img/am.jpg) repeat;
 }
 .bl-main > section:nth-child(4).bl-expand {
-	background: #0D8278;
+	background: url(../img/h.jpg) repeat;
 }
 
 .bl-main.bl-expand-item > section:not(.bl-expand),
@@ -425,7 +441,15 @@ section.bl-expand .bl-box {
 	-webkit-transition: opacity 0.1s linear 0s;
 	-moz-transition: opacity 0.1s linear 0s;
 	transition: opacity 0.1s linear 0s;
+	font-weight: 700;
+	letter-spacing: 2px;
+	display: block;
+	text-transform: uppercase;
+	line-height: 2em;
+	cursor: pointer;
+	margin-right: 2em;
 }
+
 
 section.bl-expand .bl-content,
 section.bl-expand .bl-icon-close {
@@ -434,19 +458,26 @@ section.bl-expand .bl-icon-close {
 	-webkit-transition: opacity 0.3s linear 0.5s;
 	-moz-transition: opacity 0.3s linear 0.5s;
 	transition: opacity 0.3s linear 0.5s;
+	font-weight: 700;
+	letter-spacing: 2px;
+	display: block;
+	text-transform: uppercase;
+	line-height: 2em;
+	cursor: pointer;
+	margin-right: 2em;
 }
 
-/*@media screen and (max-width: 46.5em) {*/
-	/*.bl-content,*/
-	/*.bl-box {*/
-		/*font-size: 75%;*/
-	/*}*/
+@media screen and (max-width: 46.5em) {
+	.bl-content,
+	.bl-box {
+		font-size: 75%;
+	}
 
-	/*.bl-expand .bl-box {*/
-		/*height: 130px;*/
-	/*}*/
+	.bl-expand .bl-box {
+		height: 130px;
+	}
 
-	/*.bl-content > ul li {*/
-		/*width: 40%;*/
-	/*}*/
-/*}*/
+	.bl-content > ul li {
+		width: 40%;
+	}
+}
